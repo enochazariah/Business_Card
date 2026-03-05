@@ -16,6 +16,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.smart.businesscardapp.ui.theme.BusinessCardAppTheme
@@ -49,7 +50,7 @@ fun BusinessCard() {
 
         // 🔥 Profile Image
         Image(
-            painter = painterResource(id = R.drawable.business),
+            painter = painterResource(id = R.drawable.ma_image),
             contentDescription = "Profile Image",
             modifier = Modifier
                 .size(140.dp)
@@ -66,14 +67,14 @@ fun BusinessCard() {
 
         // Name
         Text(
-            text = "Ameh Sunday",
+            text = "Azariah Enoch",
             fontSize = 34.sp,
             fontWeight = FontWeight.Bold
         )
 
         // Title
         Text(
-            text = "Full Stack Developer",
+            text = "Developer",
             fontSize = 18.sp,
             color = MaterialTheme.colorScheme.primary
         )
@@ -82,10 +83,12 @@ fun BusinessCard() {
 
         // Contact Info
         ContactRow(info = "📞 +234 800 000 0000")
-        ContactRow(info = "📧 ameh@example.com")
-        ContactRow(info = "🌐 www.ameh.dev")
+        ContactRow(info = "📧 Feddy@example.com")
+        ContactRow(info = "🌐 www.Feddy.dev")
     }
 }
+
+
 
 @Composable
 fun ContactRow(info: String) {
